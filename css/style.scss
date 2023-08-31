@@ -1,0 +1,44 @@
+@import "all";
+@import "responsive";
+@import "company";
+
+$font-family_poppins : 'Poppins', sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+    font-family: $font-family_poppins;
+	font-size: 16px;
+	font-weight: 600;
+	overflow-x: hidden;
+	min-width: 320px;
+    // background-color: #ef9273;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-weight: 400;
+    font-family: $font-family_poppins;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}

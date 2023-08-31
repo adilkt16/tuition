@@ -1,0 +1,73 @@
+
+//IGNORE THIS FILE
+
+
+
+div.bottom-us {
+	background: #fff;
+	padding: 10px 0;
+	text-align: center;
+	border-top: 1px solid #000;
+	p {
+		a {
+			// color: #f7941e;
+			color: red;
+			font-size: 16px;
+			font-weight: 700;
+		
+			&:hover {
+				font-size: 18px;
+				transition: .3s;
+			}
+		}
+	}
+}
+
+a.for-whatsapp-image {
+	z-index: 9;
+}
+.img-container {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: auto;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+@media all and (max-width:480px){
+	.img-container {
+		width: 40px;
+	}
+}
+
+@media all and (max-width:320px){
+	.img-container {
+		bottom: 20px;
+		right: 10px;
+	}
+}

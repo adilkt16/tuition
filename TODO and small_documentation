@@ -1,0 +1,26 @@
+
+
+TODO :
+Create better documentation
+Copyright_link to add at last
+Compressed images to be added
+
+
+
+
+Documentation on this template
+
+
+
+Edit the css from _all.scss and for making it responsive use it from _responsive.scss
+
+MEDIA QUERIEs : 1200 , 980 , 860 , 768 , 640 , 480, 360 , 320
+The text limit is given in some places , be sure to read and do neccerserily . 
+For optimised website view for clients , use same sized images by certain tools for resizing.
+Some contents have min and max height and width , be sure to adjust it according to your requirement.
+
+Two extra css and one extra js file for testimonial owl carousel section .
+
+CDN USED FOR FONTS AND SLIDER
+
+RESIZE THE IMAGES OF SLIDER IMAGES TO 550 HEIGHT AND 1350 WIDTH FOR PROPER VIEWING , cause the code is adjusted that way

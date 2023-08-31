@@ -1,0 +1,585 @@
+
+
+//COLOR VARIABLES
+$white: #fff;
+$black: #000;
+$base: #ef9273;
+
+
+@media all and (max-width:1200px){
+    section.top-quick-order ul li div.shop-name h1 {
+        padding: 10px 20px 10px 0;
+        font-size: 36px;
+    }
+    section.top-quick-order {
+        padding: 0 50px;
+    }
+
+    .slick-nav {
+        bottom: 20px;
+        left: 40%;
+    }
+
+    //ranks
+    #ranks section.all-category div.each-category ul li div.each-rank {
+        height: 330px;
+        min-height: 330px;
+        padding: 20px 10px 10px;
+    }
+
+    //yt-gallery
+    #youtube-gallery {
+        padding: 80px 20px;
+    }
+    #youtube-gallery section.all-videos div.each-video {
+        width: 30%;
+        margin: 0 20px 20px 0;
+        height: 200px;
+    }
+    //footer
+    footer {
+        padding: 80px 80px 50px;
+    }
+}
+@media all and (max-width:980px){
+    //top-quick-order
+    section.top-quick-order ul li div.shop-name h1 {
+        padding: 10px 20px 10px 0;
+        font-size: 28px;
+    }
+    section.top-quick-order {
+        padding: 0 40px;
+    }
+
+
+    //about
+    #about section.for-common-flex div.left-about div.about-image {
+        min-width: 300px;
+        width: auto;
+        height: 350px;
+    }
+    #about section.for-common-flex div.right-about {
+        width: 52%;
+    }
+
+    //ranks
+    #ranks section.all-category div.each-category h6.category-heading {
+        margin: 30px 0 10px;
+    }
+    #ranks section.all-category div.each-category ul li {
+        width: 30%;
+        margin: 0 15px 15px 0;
+    }
+    #ranks section.all-category div.each-category ul li div.each-rank {
+        height: 310px;
+        min-height: unset;
+        padding: 20px 10px 10px;
+    }
+
+    //services
+    #services ul li {
+        min-height: 300px;
+        padding: 40px 20px;
+        margin: 0 auto 15px;
+        width: 48%;
+    }
+
+    //courses
+    #courses section.alled div.each-course {
+        padding: 20px;
+        margin: 0 15px 15px 0;
+        width: 47%;
+    }
+
+    //footer
+    footer {
+        padding: 80px 0 50px;
+        #contact ul.main-ul {
+            flex-wrap: wrap;
+            li {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+@media all and (max-width:860px){
+    //top-quick-order
+    section.top-quick-order ul li div.quick-info h6 {
+        font-size: 16px;
+    }
+    section.top-quick-order ul li div.shop-name h1 {
+        padding: 10px 10px 10px 0;
+        font-size: 22px;
+    }
+
+    //spotlight
+    .slick-nav li {
+        margin-right: 10px;
+        border-radius: 6px;
+        padding: 4px 12px;
+        button {
+            font-size: 18px;
+        }
+    }
+    .slick-nav {
+        bottom: 5px;
+        left: 40%;
+    }
+
+    //about
+    #about section.for-common-flex {
+        flex-wrap: wrap;
+    }
+    #about section.for-common-flex div.left-about {
+        margin-right: 0px;
+        height: auto;
+    }
+    #about section.for-common-flex div.common-child {
+        width: 100%;
+        text-align: center;
+    }
+    #about section.for-common-flex div.left-about div.about-image {
+        min-width: unset;
+        width: 400px;
+        height: 350px;
+        margin: 0 auto 50px;
+    }
+    #about section.for-common-flex div.right-about section.all-locations {
+        margin-top: 30px;
+        display: inline-block;
+    }
+
+    //ranks
+    #ranks section.all-category div.each-category ul li div.each-rank {
+        height: 330px;
+        min-height: unset;
+        padding: 20px 10px 10px;
+    }
+
+    //custom
+    #custom {
+        padding: 60px;
+    }
+
+    //yt-gallery
+    #youtube-gallery section.all-videos div.each-video {
+        width: 46%;
+        margin: 0 20px 20px 0;
+        height: 200px;
+    }
+}
+@media all and (max-width:768px){
+    //common
+    h5.third_heading  {
+        font-size: 36px;
+    }
+
+    //top-quick-order
+    section.top-quick-order {
+        display: none;
+    }
+
+    //header
+    header {
+        padding: 20px 60px;
+        background-color: $base;
+    }
+    header nav.navbar div.shop-name {
+        display: flex;
+        background-color: unset;
+    }
+    header nav.navbar {
+        justify-content: space-between;
+    }
+
+    //Navbar
+	.nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4.5rem;
+        flex-direction: column;
+        background-color: $black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 0 100px;
+        z-index: 10;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 0 0 30px 0;
+        &:first-child{
+            margin-top: 20px;
+        }
+    }
+    html body  header nav.navbar div.hamburger {
+        display: block;
+        cursor: pointer;
+    }
+	.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    ul.nav-menu {
+        li.nav-item {
+            margin-right: 0;
+            a {
+                font-size: 16px;
+                font-weight: 900;
+            }
+        }
+    }
+
+    //ranks
+    #ranks section.all-category div.each-category ul li {
+        width: 46%;
+    }
+    #ranks section.all-category div.each-category ul li div.each-rank h6.rank, #ranks section.all-category div.each-category ul li div.each-rank h6.mark {
+        display: block;
+    }
+    #ranks section.all-category div.each-category ul li div.each-rank {
+        height: 300px;
+        min-height: unset;
+        padding: 20px 20px 10px;
+    }
+
+    //services
+    #services ul li {
+        min-height: 300px;
+        padding: 20px 20px;
+        margin: 0 auto 15px;
+        width: 48%;
+    }
+
+    //courses
+    #courses section.alled div.each-course {
+        padding: 20px;
+        margin: 0 0px 15px 0;
+        width: 100%;
+        div.course-image {
+            height: 200px;
+            img {}
+        }
+    }
+
+    //custom
+    #custom h4 {
+        font-size: 28px;
+    }
+    #custom h3 {
+        font-size: 24px;
+    }
+
+    //achievements
+    #achievements section.each-achieved ul li p {
+        font-size: 16px;
+    }
+
+    //yt-gallery
+    #youtube-gallery section.all-videos div.each-video {
+        width: 100%;
+        margin: 0 0px 20px 0;
+        height: 200px;
+    }
+
+    //faq
+    #faq {
+        padding: 50px 50px;
+    }
+    #faq section.questions div.clickable ul li h6 {
+        font-size: 16px;
+    }
+    #faq section.questions div.clickable div.clicked p {
+        padding-left: 20px;
+        font-size: 15px;
+        margin-left: 40px;
+    }
+    #faq section.questions div.clickable ul li div.dropdown {
+        margin-right: 16px;
+        width: 20px;
+    }
+    
+    //#contact
+    footer {
+        padding: 50px 0;
+    }
+    footer #contact ul.main-ul li {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    footer #contact ul.main-ul li.centres {
+        order: 1;
+        a.places {
+            display: inline;
+        }
+    }
+    footer #contact ul.main-ul li.contact-details {
+        order: 2;
+    }
+    footer #contact ul.main-ul li.contact-links {
+        order: 3;
+    }
+    footer #contact ul.main-ul li div {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+    }
+    footer #contact ul.main-ul li div.address_etc div.both-image-and-detail {
+        align-items: center;
+    }
+    footer #contact ul.main-ul li ul.social-media li {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    footer #contact ul.main-ul li ul.social-media {
+        margin: 0 100px;
+    }
+}
+@media all and (max-width:640px){
+    //common
+    #about, #ranks,#menu, #services,#achievements,#courses, #testimonial, #faq {
+        padding: 40px 0;
+    }
+
+    //header
+    header {
+        padding: 20px 30px;
+    }
+    header nav.navbar div.shop-name a.main-logo {
+        width: 120px;
+    }
+    header nav.navbar div.shop-name h1 {
+        font-size: 16px;
+    }
+
+    //spotlight
+    #spotlight div.slick-slider-container div.item div.spotlight-main-image {
+        height: 60vh;
+    }
+    .slick-nav li{
+        padding: 2px 8px;
+        border-radius: 0;
+        button {
+            font-size: 14px;
+        }
+    }
+
+    //about
+    #about section.for-common-flex div.left-about div.about-image {
+        width: 350px;
+        height: 300px;
+    }
+
+    //ranks
+    #ranks section.all-category div.each-category ul li {
+        width: 100%;
+    }
+    #ranks section.all-category div.each-category ul li div.each-rank {
+        height: auto;
+        padding: 20px 20px 20px;
+    }
+
+    //services
+    #services ul li {
+        min-height: auto;
+        padding: 20px;
+        margin: 0 auto 15px;
+        width: 100%;
+    }
+
+    //custom
+    #custom {
+        padding: 50px 30px;
+    }
+
+    //achievements
+    #achievements section.each-achieved {
+        h6 {
+            margin-bottom: 20px;
+        }
+        margin-bottom: 30px;
+        ul {
+            display: block;
+            li {
+                margin: 0 0 10px 0;
+
+                &:nth-child(2n){
+                        padding: 10px;
+                        border-left: 0;
+                        border-right: 0;
+                        border-top: 1px solid $white;
+                        border-bottom: 1px solid $white;
+                }
+            }
+        }
+    }
+
+    //faq
+    #faq section.questions div.clickable div.clicked p {
+        padding-left: 10px;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    #faq section.questions div.clickable ul li h6 {
+        margin-left: 20px;
+    }
+    #faq {
+        padding: 50px 30px;
+    }
+
+    //#contact
+    footer {
+        padding: 50px 0 0px;
+    }
+}
+@media all and (max-width:480px){
+    //header
+    header {
+        padding: 15px ;
+    }
+    header nav.navbar div.shop-name a.main-logo {
+        width: 100px;
+    }
+    header nav.navbar div.shop-name h1 {
+        font-size: 14px;
+    }
+
+    //spotlight
+    #spotlight div.slick-slider-container div.item div.spotlight-main-image {
+        height: 60vh;
+    }
+
+
+    //about
+    #about section.for-common-flex div.left-about div.about-image {
+        width: 280px;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    #about section.for-common-flex div.right-about p {
+        font-size: 15px;
+    }
+    #about section.for-common-flex div.right-about section.all-locations span {
+        font-size: 15px;
+    }
+    #about section.for-common-flex div.right-about section.all-locations div.location-icon {
+        width: 15px;
+        margin-right: 4px;
+    }
+
+    //services
+    #services ul li {
+        h6 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 15px;
+        } 
+    }
+
+    //custom
+    #custom h3 {
+        font-size: 20px;
+    }
+    #custom h4 {
+        font-size: 24px;
+    }
+    #custom a.custom-button {
+        margin-top: 20px;
+        font-size: 16px;
+        padding: 12px 40px;
+        border-radius: 6px;
+    }
+    #custom {
+        padding: 40px 10px;
+    }
+
+    //#faq
+    #faq {
+        padding: 40px 20px;
+    }
+    #faq section.questions {
+        padding-bottom: 0px;
+    }
+
+    //testimonial
+    #testimonial {
+        padding: 40px 0;
+    }
+    #testimonial ul li p {
+        font-size: 16px;
+    }
+    #testimonial ul li {
+        padding: 55px 30px 30px;
+    }
+
+    //#contact 
+    footer #contact ul.main-ul li h4 {
+        font-size: 24px;
+    }
+    footer #contact ul.main-ul li a {
+        font-size: 14px;
+    }
+    footer #contact ul.main-ul li div.address_etc div.both-image-and-detail p {
+        font-size: 14px;
+    }
+    footer #contact ul.main-ul li p.day {
+        font-size: 16px;
+    }
+    footer #contact ul.main-ul li p.time {
+        font-size: 14px;
+    }
+    footer #contact ul.main-ul li.centres a.places {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 10px;
+        font-size: 15px;
+    }
+}
+@media all and (max-width:360px){
+    //spotlight
+    #spotlight div.slick-slider-container div.item div.spotlight-main-image {
+        height: 50vh;
+    }
+
+    //about
+    #about section.for-common-flex div.right-about p {
+        font-size: 14px;
+    }
+    #about section.for-common-flex div.right-about section.all-locations span {
+        font-size: 14px;
+    }
+
+    //faq
+    #faq section.questions div.clickable div.clicked p {
+        padding-left: 10px;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    #faq section.questions div.clickable ul li h6 {
+        font-size: 15px;
+    }
+
+    //testimonials
+    #testimonial ul li p {
+        font-size: 15px;
+    }
+
+    //#contact
+    footer #contact ul.main-ul li ul.social-media {
+        margin: 0 70px;
+    }
+}
+@media all and (max-width:320px){}
